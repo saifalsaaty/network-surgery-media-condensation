@@ -1,0 +1,157 @@
+{
+  "fold_1": {
+    "train": [
+      "Base jumping",
+      "Bearpark_climbing",
+      "Bike Polo",
+      "Bus_in_Rock_Tunnel",
+      "Car_railcrossing",
+      "Cockpit_Landing",
+      "Cooking",
+      "Excavators river crossing",
+      "Fire Domino",
+      "Kids_playing_in_leaves",
+      "Notre_Dame",
+      "Paintball",
+      "Playing_on_water_slide",
+      "Scuba",
+      "St Maarten Landing",
+      "Statue of Liberty",
+      "Uncut_Evening_Flight",
+      "Valparaiso_Downhill",
+      "car_over_camera",
+      "playing_ball"
+    ],
+    "test": [
+      "Air_Force_One",
+      "Eiffel Tower",
+      "Jumps",
+      "Saving dolphines",
+      "paluma_jump"
+    ]
+  },
+  "fold_2": {
+    "train": [
+      "Air_Force_One",
+      "Bearpark_climbing",
+      "Bike Polo",
+      "Bus_in_Rock_Tunnel",
+      "Cockpit_Landing",
+      "Cooking",
+      "Eiffel Tower",
+      "Fire Domino",
+      "Jumps",
+      "Kids_playing_in_leaves",
+      "Paintball",
+      "Playing_on_water_slide",
+      "Saving dolphines",
+      "Scuba",
+      "St Maarten Landing",
+      "Statue of Liberty",
+      "Uncut_Evening_Flight",
+      "Valparaiso_Downhill",
+      "paluma_jump",
+      "playing_ball"
+    ],
+    "test": [
+      "Base jumping",
+      "Car_railcrossing",
+      "Excavators river crossing",
+      "Notre_Dame",
+      "car_over_camera"
+    ]
+  },
+  "fold_3": {
+    "train": [
+      "Air_Force_One",
+      "Base jumping",
+      "Car_railcrossing",
+      "Cockpit_Landing",
+      "Cooking",
+      "Eiffel Tower",
+      "Excavators river crossing",
+      "Fire Domino",
+      "Jumps",
+      "Notre_Dame",
+      "Paintball",
+      "Saving dolphines",
+      "Scuba",
+      "St Maarten Landing",
+      "Statue of Liberty",
+      "Uncut_Evening_Flight",
+      "Valparaiso_Downhill",
+      "car_over_camera",
+      "paluma_jump",
+      "playing_ball"
+    ],
+    "test": [
+      "Bearpark_climbing",
+      "Bike Polo",
+      "Bus_in_Rock_Tunnel",
+      "Kids_playing_in_leaves",
+      "Playing_on_water_slide"
+    ]
+  },
+  "fold_4": {
+    "train": [
+      "Air_Force_One",
+      "Base jumping",
+      "Bearpark_climbing",
+      "Bike Polo",
+      "Bus_in_Rock_Tunnel",
+      "Car_railcrossing",
+      "Cockpit_Landing",
+      "Cooking",
+      "Eiffel Tower",
+      "Excavators river crossing",
+      "Fire Domino",
+      "Jumps",
+      "Kids_playing_in_leaves",
+      "Notre_Dame",
+      "Paintball",
+      "Playing_on_water_slide",
+      "Saving dolphines",
+      "Statue of Liberty",
+      "car_over_camera",
+      "paluma_jump"
+    ],
+    "test": [
+      "Scuba",
+      "St Maarten Landing",
+      "Uncut_Evening_Flight",
+      "Valparaiso_Downhill",
+      "playing_ball"
+    ]
+  },
+  "fold_5": {
+    "train": [
+      "Air_Force_One",
+      "Base jumping",
+      "Bearpark_climbing",
+      "Bike Polo",
+      "Bus_in_Rock_Tunnel",
+      "Car_railcrossing",
+      "Eiffel Tower",
+      "Excavators river crossing",
+      "Jumps",
+      "Kids_playing_in_leaves",
+      "Notre_Dame",
+      "Playing_on_water_slide",
+      "Saving dolphines",
+      "Scuba",
+      "St Maarten Landing",
+      "Uncut_Evening_Flight",
+      "Valparaiso_Downhill",
+      "car_over_camera",
+      "paluma_jump",
+      "playing_ball"
+    ],
+    "test": [
+      "Cockpit_Landing",
+      "Cooking",
+      "Fire Domino",
+      "Paintball",
+      "Statue of Liberty"
+    ]
+  }
+}

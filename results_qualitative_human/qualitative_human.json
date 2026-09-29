@@ -1,0 +1,132 @@
+{
+  "summe": {
+    "rule": "3 sampled frames with the highest mean annotator score (near-uniform frames skipped)",
+    "video": "Jumps",
+    "fold": 1,
+    "checkpoint": "runs\\summe\\mobilevitv2_050\\proposed\\seed42\\fold_1_last.pth",
+    "seed": 42,
+    "frames": [
+      {
+        "sample": 11,
+        "human_rank": 1,
+        "human_score": 1.0,
+        "video_frame": 327,
+        "time_pct": 34.5,
+        "model_score": 0.38058626651763916,
+        "model_rank": 4
+      },
+      {
+        "sample": 12,
+        "human_rank": 2,
+        "human_score": 1.0,
+        "video_frame": 359,
+        "time_pct": 37.8,
+        "model_score": 0.3640989661216736,
+        "model_rank": 6
+      },
+      {
+        "sample": 3,
+        "human_rank": 3,
+        "human_score": 0.7692307829856873,
+        "video_frame": 65,
+        "time_pct": 6.8,
+        "model_score": 0.18802562355995178,
+        "model_rank": 22
+      }
+    ],
+    "skipped_uniform": [],
+    "model_top3": [
+      {
+        "sample": 30,
+        "time_pct": 100.0,
+        "model_score": 0.6255525350570679,
+        "human_score": 0.0,
+        "uniform": true
+      },
+      {
+        "sample": 8,
+        "time_pct": 24.1,
+        "model_score": 0.45719727873802185,
+        "human_score": 0.3076923191547394,
+        "uniform": false
+      },
+      {
+        "sample": 7,
+        "time_pct": 20.7,
+        "model_score": 0.414247065782547,
+        "human_score": 0.1538461595773697,
+        "uniform": false
+      }
+    ],
+    "model_rank_of_human_top": [
+      4,
+      6,
+      22
+    ]
+  },
+  "tvsum": {
+    "rule": "3 sampled frames with the highest mean annotator score (near-uniform frames skipped)",
+    "video": "i3wAGJaaktw",
+    "fold": 2,
+    "checkpoint": "runs\\tvsum\\mobilevitv2_050\\proposed\\seed42\\fold_2_last.pth",
+    "seed": 42,
+    "frames": [
+      {
+        "sample": 2,
+        "human_rank": 1,
+        "human_score": 1.0,
+        "video_frame": 162,
+        "time_pct": 3.4,
+        "model_score": 0.6751223802566528,
+        "model_rank": 6
+      },
+      {
+        "sample": 19,
+        "human_rank": 2,
+        "human_score": 0.8837209343910217,
+        "video_frame": 2916,
+        "time_pct": 62.1,
+        "model_score": 0.7350714802742004,
+        "model_rank": 1
+      },
+      {
+        "sample": 3,
+        "human_rank": 3,
+        "human_score": 0.8604651093482971,
+        "video_frame": 324,
+        "time_pct": 6.9,
+        "model_score": 0.6559974551200867,
+        "model_rank": 9
+      }
+    ],
+    "skipped_uniform": [],
+    "model_top3": [
+      {
+        "sample": 19,
+        "time_pct": 62.1,
+        "model_score": 0.7350714802742004,
+        "human_score": 0.8837209343910217,
+        "uniform": false
+      },
+      {
+        "sample": 18,
+        "time_pct": 58.6,
+        "model_score": 0.715225100517273,
+        "human_score": 0.8604651093482971,
+        "uniform": false
+      },
+      {
+        "sample": 24,
+        "time_pct": 79.3,
+        "model_score": 0.7112303972244263,
+        "human_score": 0.1627907007932663,
+        "uniform": false
+      }
+    ],
+    "model_rank_of_human_top": [
+      6,
+      1,
+      9
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+# datasets and derived data (not redistributed)
+data/*
+!data/README.md
+h5/*.h5
+cache/
+cache_f*/
+# trained checkpoints and training logs
+runs/
+runs_f*/
+*.pth
+*.pt
+# local / temporary
+condensed/
+__pycache__/
+*.pyc
+.idea/
+results/smoke/
+results/crash_log.txt

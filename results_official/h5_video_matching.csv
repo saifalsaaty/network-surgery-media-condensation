@@ -1,0 +1,76 @@
+dataset,h5_key,h5_name,n_frames,matched,gt_corr,candidates_same_length
+summe,video_1,Air_Force_One,4494,Air_Force_One,1.0,1
+summe,video_10,Excavators river crossing,9721,Excavators river crossing,1.0,1
+summe,video_11,Fire Domino,1612,Fire Domino,1.0,1
+summe,video_12,Jumps,950,Jumps,1.0,1
+summe,video_13,Kids_playing_in_leaves,3187,Kids_playing_in_leaves,1.0,1
+summe,video_14,Notre_Dame,4608,Notre_Dame,1.0,1
+summe,video_15,Paintball,6096,Paintball,1.0,1
+summe,video_16,Playing_on_water_slide,3065,Playing_on_water_slide,1.0,2
+summe,video_17,Saving dolphines,6683,Saving dolphines,1.0,1
+summe,video_18,Scuba,2221,Scuba,1.0,1
+summe,video_19,St Maarten Landing,1751,St Maarten Landing,1.0,1
+summe,video_2,Base jumping,4729,Base jumping,1.0,1
+summe,video_20,Statue of Liberty,3863,Statue of Liberty,1.0,1
+summe,video_21,Uncut_Evening_Flight,9672,Uncut_Evening_Flight,1.0,1
+summe,video_22,Valparaiso_Downhill,5178,Valparaiso_Downhill,1.0,1
+summe,video_23,car_over_camera,4382,car_over_camera,1.0,1
+summe,video_24,paluma_jump,2574,paluma_jump,1.0,1
+summe,video_25,playing_ball,3120,playing_ball,1.0,1
+summe,video_3,Bearpark_climbing,3341,Bearpark_climbing,1.0,1
+summe,video_4,Bike Polo,3064,Bike Polo,1.0,2
+summe,video_5,Bus_in_Rock_Tunnel,5131,Bus_in_Rock_Tunnel,1.0,1
+summe,video_6,Car_railcrossing,5075,Car_railcrossing,1.0,1
+summe,video_7,Cockpit_Landing,9046,Cockpit_Landing,1.0,1
+summe,video_8,Cooking,1286,Cooking,1.0,1
+summe,video_9,Eiffel Tower,4971,Eiffel Tower,1.0,1
+tvsum,video_1,,10597,AwmHb44_ouw,0.9214279358306531,1
+tvsum,video_10,,3995,akI8YFjEmUw,0.9671133923324907,1
+tvsum,video_11,,4700,i3wAGJaaktw,0.9701292434566486,1
+tvsum,video_12,,13511,Bhxk-O1Y7Ho,0.9324756975972298,1
+tvsum,video_13,,3532,0tmA_C6XwfM,0.9836658191655984,1
+tvsum,video_14,,4853,3eYKfiOEJNs,0.9746181089638959,1
+tvsum,video_15,,4324,xxdtq8mxegs,0.9834997231678627,1
+tvsum,video_16,,9534,WG0MBPpPC6I,0.8613158441071641,1
+tvsum,video_17,,5846,Hl-__g2gn_A,0.9302432420023568,1
+tvsum,video_18,,9731,Yi4Ij2NM7U4,0.9568025441773897,1
+tvsum,video_19,,5742,37rzWOQsNIw,0.9531316247948072,1
+tvsum,video_2,,4688,98MoyGZKHXc,0.9792743547068992,1
+tvsum,video_20,,6241,LRw_obCPUt0,0.9619313935999572,1
+tvsum,video_21,,19406,cjibtmSLxQ4,0.7986296322958709,1
+tvsum,video_22,,5661,b626MiF1ew4,0.9356692435021814,1
+tvsum,video_23,,5631,XkqCExn6_Us,0.939786756296571,1
+tvsum,video_24,,4356,GsAD1KT1xo8,0.9350512639049995,1
+tvsum,video_25,,6580,PJrm840pAUI,0.911376204806425,1
+tvsum,video_26,,3312,91IHQYk1IQM,0.9520121158491643,1
+tvsum,video_27,,10917,RBCABdttQmI,0.8739352142318514,1
+tvsum,video_28,,8281,z_6gVvQb2d0,0.9350275151271863,1
+tvsum,video_29,,17527,fWutDQy1nnY,0.9387115052626369,1
+tvsum,video_3,,14019,J0nA4VgnoCo,0.9441679795040439,1
+tvsum,video_30,,4005,4wU_LUjG5Ic,0.9747948978786722,1
+tvsum,video_31,,5412,VuWGsYPqAX8,0.8795904472562437,1
+tvsum,video_32,,3802,JKpqYvAdIsw,0.9321493085000443,1
+tvsum,video_33,,13365,xmEERLqJ2kU,0.9617707639854381,1
+tvsum,video_34,,3705,byxOvuiIJV0,0.950451047468235,1
+tvsum,video_35,,4463,_xMr-HKMfVA,0.9257738113109591,1
+tvsum,video_36,,7959,WxtbjNsCQ8A,0.9420479722047763,1
+tvsum,video_37,,4009,uGu_10sucQo,0.9789349384211344,1
+tvsum,video_38,,2941,EE-bNr36nyA,0.9654492202498708,1
+tvsum,video_39,,4165,Se3oxnaPsz0,0.9697187008212693,1
+tvsum,video_4,,7210,gzDbaEs1Rlg,0.9530834650226824,1
+tvsum,video_40,,11414,oDXZc0tZe04,0.892047540224131,1
+tvsum,video_41,,8073,qqR6AEXwxoQ,0.9406780268604793,1
+tvsum,video_42,,5939,EYqVtI9YWJA,0.9483768955239397,1
+tvsum,video_43,,4931,eQu1rNs0an0,0.9700657362096985,1
+tvsum,video_44,,4304,JgHubY5Vw3Y,0.9867379377377211,1
+tvsum,video_45,,2500,iVt07TCkFM0,0.9724238009915214,1
+tvsum,video_46,,15307,E11zDS9XGzg,0.891323493141692,1
+tvsum,video_47,,4740,NyBmCxDoHJU,0.9517900141685423,1
+tvsum,video_48,,3896,kLxoNp-UchI,0.9407629538876685,1
+tvsum,video_49,,5971,jcoYJXDG9sw,0.9748422693537495,1
+tvsum,video_5,,3327,XzYM3PfTM4w,0.9563499261220356,1
+tvsum,video_50,,6912,-esJrBWj2d8,0.9703808856548429,1
+tvsum,video_6,,9671,HT5vyqe0Xaw,0.9329422375395737,1
+tvsum,video_7,,4468,sTEELN-vY30,0.9827418314071241,1
+tvsum,video_8,,9870,vdmoEJ5YbrQ,0.9194182418224137,1
+tvsum,video_9,,7010,xwqBXPGE9pQ,0.9554637547620652,1

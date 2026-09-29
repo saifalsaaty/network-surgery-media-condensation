@@ -1,0 +1,46 @@
+{
+  "summe": {
+    "video": "Kids_playing_in_leaves",
+    "fold": 3,
+    "checkpoint": "runs\\summe\\mobilevitv2_050\\proposed\\seed42\\fold_3_last.pth",
+    "seed": 42,
+    "n_frames": 3187,
+    "top_sample": 17,
+    "top_video_frame": 1757,
+    "top_score": 0.562056303024292,
+    "gradcam_map": [
+      14,
+      14
+    ],
+    "f1_strict": 0.5,
+    "tau_ann": -0.060340847880488116,
+    "rho_ann": -0.0823266095308561,
+    "selected_fraction": 0.14666666090488434,
+    "per_video_csv": {
+      "f1_strict": 0.5,
+      "tau_ann": -0.0603408478804881
+    }
+  },
+  "tvsum": {
+    "video": "gzDbaEs1Rlg",
+    "fold": 4,
+    "checkpoint": "runs\\tvsum\\mobilevitv2_050\\proposed\\seed42\\fold_4_last.pth",
+    "seed": 42,
+    "n_frames": 7210,
+    "top_sample": 12,
+    "top_video_frame": 2734,
+    "top_score": 0.6112659573554993,
+    "gradcam_map": [
+      14,
+      14
+    ],
+    "f1_strict": 0.21136363912373782,
+    "tau_ann": 0.18924983045681426,
+    "rho_ann": 0.24834682068746564,
+    "selected_fraction": 0.14666666090488434,
+    "per_video_csv": {
+      "f1_strict": 0.2113636391237378,
+      "tau_ann": 0.1892498304568142
+    }
+  }
+}

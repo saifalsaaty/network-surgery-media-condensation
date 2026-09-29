@@ -1,0 +1,163 @@
+{
+  "summe": {
+    "rule": "highest tau_ann of the proposed model (seed 42) — best case, chosen after the results",
+    "video": "Jumps",
+    "rank": 1,
+    "n_videos": 25,
+    "top5_by_tau": [
+      {
+        "video": "Jumps",
+        "tau_ann": 0.4143932602744866,
+        "f1_strict": 0.6363636255264282
+      },
+      {
+        "video": "Paintball",
+        "tau_ann": 0.3870238924130912,
+        "f1_strict": 0.7906976342201233
+      },
+      {
+        "video": "Eiffel Tower",
+        "tau_ann": 0.385787742407441,
+        "f1_strict": 0.5909090638160706
+      },
+      {
+        "video": "Cooking",
+        "tau_ann": 0.3603041333256979,
+        "f1_strict": 0.8636363744735718
+      },
+      {
+        "video": "Statue of Liberty",
+        "tau_ann": 0.259661593494089,
+        "f1_strict": 0.409090906381607
+      }
+    ],
+    "fold": 1,
+    "checkpoint": "runs\\summe\\mobilevitv2_050\\proposed\\seed42\\fold_1_last.pth",
+    "seed": 42,
+    "n_frames": 950,
+    "f1_strict": 0.6363636255264282,
+    "tau_ann": 0.4143932602744866,
+    "rho_ann": 0.5254250340463281,
+    "selected_fraction": 0.14666666090488434,
+    "top_frames": [
+      {
+        "sample": 8,
+        "score_rank": 2,
+        "video_frame": 229,
+        "time_pct": 24.1,
+        "score": 0.45719727873802185,
+        "in_consensus_summary": false,
+        "in_model_summary": true
+      },
+      {
+        "sample": 7,
+        "score_rank": 3,
+        "video_frame": 196,
+        "time_pct": 20.7,
+        "score": 0.414247065782547,
+        "in_consensus_summary": false,
+        "in_model_summary": true
+      },
+      {
+        "sample": 11,
+        "score_rank": 4,
+        "video_frame": 327,
+        "time_pct": 34.5,
+        "score": 0.38058626651763916,
+        "in_consensus_summary": true,
+        "in_model_summary": true
+      }
+    ],
+    "excluded_uniform_frames": [
+      {
+        "sample": 30,
+        "rank": 1,
+        "std": 6.970196723937988,
+        "score": 0.6255524754524231
+      }
+    ],
+    "uniform_std_threshold": 10.0,
+    "per_video_csv": {
+      "f1_strict": 0.6363636255264282,
+      "tau_ann": 0.4143932602744866
+    },
+    "match": true
+  },
+  "tvsum": {
+    "rule": "highest tau_ann of the proposed model (seed 42) — best case, chosen after the results",
+    "video": "i3wAGJaaktw",
+    "rank": 1,
+    "n_videos": 50,
+    "top5_by_tau": [
+      {
+        "video": "i3wAGJaaktw",
+        "tau_ann": 0.3294042144434613,
+        "f1_strict": 0.3045454561710358
+      },
+      {
+        "video": "xmEERLqJ2kU",
+        "tau_ann": 0.3292642160137348,
+        "f1_strict": 0.3840909093618393
+      },
+      {
+        "video": "AwmHb44_ouw",
+        "tau_ann": 0.28355426617278,
+        "f1_strict": 0.2818181846290827
+      },
+      {
+        "video": "0tmA_C6XwfM",
+        "tau_ann": 0.2763187785840088,
+        "f1_strict": 0.3113636385649442
+      },
+      {
+        "video": "LRw_obCPUt0",
+        "tau_ann": 0.2748549105323979,
+        "f1_strict": 0.2500000055879354
+      }
+    ],
+    "fold": 2,
+    "checkpoint": "runs\\tvsum\\mobilevitv2_050\\proposed\\seed42\\fold_2_last.pth",
+    "seed": 42,
+    "n_frames": 4700,
+    "f1_strict": 0.3045454561710358,
+    "tau_ann": 0.32940421444346135,
+    "rho_ann": 0.4294452788118327,
+    "selected_fraction": 0.14666666090488434,
+    "top_frames": [
+      {
+        "sample": 19,
+        "score_rank": 1,
+        "video_frame": 2916,
+        "time_pct": 62.1,
+        "score": 0.7350714802742004,
+        "in_consensus_summary": true,
+        "in_model_summary": true
+      },
+      {
+        "sample": 18,
+        "score_rank": 2,
+        "video_frame": 2754,
+        "time_pct": 58.6,
+        "score": 0.715225100517273,
+        "in_consensus_summary": true,
+        "in_model_summary": true
+      },
+      {
+        "sample": 24,
+        "score_rank": 3,
+        "video_frame": 3726,
+        "time_pct": 79.3,
+        "score": 0.7112303972244263,
+        "in_consensus_summary": false,
+        "in_model_summary": false
+      }
+    ],
+    "excluded_uniform_frames": [],
+    "uniform_std_threshold": 10.0,
+    "per_video_csv": {
+      "f1_strict": 0.3045454561710358,
+      "tau_ann": 0.3294042144434613
+    },
+    "match": true
+  }
+}
