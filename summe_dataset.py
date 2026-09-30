@@ -108,7 +108,7 @@ class SumMeDataset(Dataset):
 
         لا علاقة لهذه الدالة بمدخل النموذج إطلاقاً — تُستخدَم فقط لبناء
         اللقطات ومطابقتها مع درجات النموذج بعد رفعها (interpolation) لنفس
-        هذه الدقة، تماماً كما يصف Algorithm 1 (الخطوة 14) في الورقة.
+        هذه الدقة، تماماً كما يصف القسم V-A2 في الورقة (150 نقطة تقييم).
         """
         video_filename = self.video_files[idx]
         video_name = os.path.splitext(video_filename)[0]

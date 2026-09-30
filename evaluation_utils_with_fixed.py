@@ -92,7 +92,7 @@ def calculate_shot_f1_dynamic_multi_annotator(pred_scores, annotator_binary, sho
 
 # ============================================================
 # 🔬 جديدة: سعة ثابتة (15%) لكلا الطرفين — تطابق بروتوكول Zhang et al. 2016 /
-# DR-DSN / VASNet / CSNet (Table 1)، بعكس السعة الديناميكية (طول ملخّص كل
+# DR-DSN / VASNet / CSNet (Table 8)، بعكس السعة الديناميكية (طول ملخّص كل
 # مُقيِّم) في بروتوكول Gygli الأصلي المُستخدَم في calculate_shot_f1_dynamic_multi_annotator.
 # ============================================================
 def calculate_shot_f1_fixed_multi_annotator(pred_scores, annotator_binary, shots,

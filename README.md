@@ -29,6 +29,8 @@ Code comments are mostly in Arabic; function names, file names and outputs are i
 | `eval_official_f1.py`, `analyze_official_f1.py` | F1 with the standard protocol of the benchmark files (plan item 11) |
 | `benchmark_speed.py`, `run_memory_benchmark.py`, `benchmark_cpu_ram.py` | Latency, FLOPs, GPU memory and CPU RAM (plan item 12) |
 | `summarize_results.py` | Summary tables, statistical tests and primary-model selection |
+| `paper_statistics.py` | Paired 2 × 2 effects (Table 3) and every configuration against the proposed model |
+| `make_figure4.py` | Figure 4 (accuracy against CPU latency) |
 | `summe_human_tau.py` | Human agreement on SumMe |
 | `make_qualitative_*.py` | Qualitative figures (temporal scores and Grad-CAM) |
 | `condense_video.py` | Condenses any video with a trained model: condensed video, shot list, score plot and storyboard |
@@ -78,13 +80,38 @@ python evaluate_cv.py --dataset tvsum --backbone mobilevitv2_050 --config propos
 1. `run_smoke_test.py` — quick check (one fold, one epoch).
 2. `run_all.py` — builds the frame cache, trains and evaluates the MobileViT configurations (resumable).
 3. `run_reference.py` — MobileNetV3-Small and the reference backbones (resumable).
-4. `summarize_results.py` — summary tables and tests in `results/`.
+4. `summarize_results.py` — summary tables and tests in `results/`; then `paper_statistics.py`, `summe_human_tau.py`
+   and `make_figure4.py`.
 5. `benchmark_speed.py`, `benchmark_cpu_ram.py` — efficiency measurements (run with no other load on the machine).
 6. `run_frames60.py`, `run_windowed_eval.py`, `eval_official_f1.py` — secondary analyses.
 7. `make_qualitative_figures.py`, `make_qualitative_best.py`, `make_qualitative_human.py` — qualitative figures.
 
 The fold split is generated deterministically (`common.get_folds`, equivalent to scikit-learn `KFold(n_splits=5,
 shuffle=True, random_state=42)`) and is identical to the files in `splits/`.
+
+## Where each result of the paper comes from
+
+Section numbers follow the submitted manuscript. All files are in this repository.
+
+| Result in the paper | File(s) |
+|---|---|
+| Table 1 (TVSum, 16 configurations) | `results/summary_tvsum.csv` (τ, ρ, F1: mean ± std across seeds); `results/comparisons_vs_proposed.csv` (Δτ with 95% CI); `results/baselines_tvsum.csv` (random and human rows) |
+| Table 2 (pre-specified decisions) | `results/primary_selection.csv`, `results/equivalence_tvsum.csv`, `results_f60/frames60_analysis.md`, `results_windowed/windowed_analysis.md`, `results_official/official_f1_summary.md` |
+| Table 3 (paired effects of surgery and of the temporal head) | `results/paired_effects.csv` (also `results/paper_statistics.md`) |
+| Table 4 (60 frames and windowed inference) | `results_f60/frames60_analysis.md`, `results_windowed/windowed_analysis.md`, `results_f60/model_stats.csv`, `results_f60/baselines_tvsum.csv` |
+| Table 5 (model size and cost) | `results/model_stats.csv` (parameters, size, GFLOPs), `results/speed_benchmark.csv` (CPU latency, peak GPU memory), `results/benchmark_env.txt` |
+| Table 6 (memory against the number of frames) | `results/memory_vs_frames.csv` (GPU), `results/cpu_ram_vs_frames.csv` (CPU) |
+| Table 7 (SumMe, 16 configurations) | `results/summary_summe.csv`, `results/comparisons_vs_proposed.csv`, `results/baselines_summe.csv`, `results/summe_human_tau.csv` (human τ: 0.269 leave-one-out, 0.206 pairwise) |
+| Table 8 (published methods) | `results_official/official_f1_summary.md`, `results_official/official_f1_analysis.md` (our rows); the other rows are the values published in the cited papers |
+| Figure 4 | `results/fig_accuracy_vs_latency.png` (`make_figure4.py`) |
+| Figures 5 and 6 | `results_qualitative_best/fig_temporal_tvsum.png`, `results_qualitative_best/fig_temporal_summe.png` |
+| Figures 7 and 8 | `results_qualitative_human/fig_gradcam_human3_tvsum.png`, `results_qualitative_human/fig_gradcam_human3_summe.png` |
+| FP16 against FP32 (Section V-G) | `results/precision_check.csv` |
+| Exploratory equivalence tests (Section V-B) | `results/comparisons_vs_proposed.csv` (rows with `pre_specified = False`) |
+| Per-video values of every configuration and seed | `results/per_video_*.csv`, `results_f60/per_video_*.csv`, `results_windowed/`, `results_official/official_f1_per_video.csv` |
+
+`results_qualitative/` and the files `results_qualitative_best/fig_gradcam_top3_*.png` are further qualitative outputs
+of the same scripts that are not shown in the paper.
 
 ## Condensing a video
 
@@ -117,7 +144,7 @@ Shot segmentation and selection use the same settings and code as the evaluation
 | `--ratio 0.15` | Duration budget as a fraction of the video (0.15, as in the paper) |
 | `--seconds 60` | Duration budget in seconds instead of `--ratio` |
 | `--mode uniform` | 30 frames spread over the whole video (default; the main setting of the paper) |
-| `--mode windowed` | 30 frames from every window of 100 frames (Section 4.2), for denser coverage of long videos |
+| `--mode windowed` | 30 frames from every window of 100 frames (Section IV-B), for denser coverage of long videos |
 | `--dataset tvsum` | Use the models trained on TVSum (default) or on SumMe |
 | `--fold 1` | Model used for videos outside the benchmarks; `all` averages the five fold models (not evaluated in the paper) |
 | `--ckpt` | Checkpoint file(s), or a run folder, instead of the default `runs/...` folder |

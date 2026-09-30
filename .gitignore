@@ -14,5 +14,8 @@ condensed/
 __pycache__/
 *.pyc
 .idea/
+.venv/
+venv/
+*.mp4
 results/smoke/
 results/crash_log.txt

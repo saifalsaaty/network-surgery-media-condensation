@@ -11,7 +11,7 @@
 
 التجهيز (مرة واحدة):
   1) نزّل datasets.tar.gz من رابط Google Drive في README مستودع KaiyangZhou/pytorch-vsumm-reinforce
-     وضع الملفين في Unified_Experiments/h5/ :
+     وضع الملفين في المجلد h5/ :
        eccv16_dataset_summe_google_pool5.h5
        eccv16_dataset_tvsum_google_pool5.h5
   2) إن لم تكن h5py مثبتة: في Terminal داخل PyCharm (بيئة المشروع):  pip install h5py

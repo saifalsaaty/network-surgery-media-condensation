@@ -1,10 +1,10 @@
 """
 Condense a whole video with a trained model of this repository (demo and deployment script).
 
-Pipeline (Algorithm 1 and Section 4.2 of the paper):
+Pipeline (Algorithm 1 and Section IV-B of the paper):
   1. Frame sampling over the whole video
        uniform  (default, the main setting of the paper): K = 30 frames spread uniformly over the video
-       windowed (Section 4.2): 30 frames from every consecutive window of 100 frames
+       windowed (Section IV-B): 30 frames from every consecutive window of 100 frames
   2. Scoring with the surgically truncated MobileViT-v2-050 and the two-block Conv1d-Transformer.
      The backbone processes B frames at a time (streaming) and only the pooled feature vectors are kept;
      the temporal encoder then runs once on the whole feature sequence.
@@ -704,7 +704,7 @@ def main():
                     help="duration budget in seconds instead of --ratio (e.g. 60 for about one minute)")
     ap.add_argument('--mode', choices=['uniform', 'windowed'], default='uniform',
                     help="uniform: 30 frames over the whole video (main setting of the paper); "
-                         "windowed: 30 frames from every 100 frames (denser, Section 4.2)")
+                         "windowed: 30 frames from every 100 frames (denser, Section IV-B)")
     ap.add_argument('--dataset', choices=C.DATASETS, default='tvsum', help="benchmark the model was trained on")
     ap.add_argument('--backbone', choices=C.ALL_BACKBONES, default='mobilevitv2_050')
     ap.add_argument('--config', choices=list(C.CONFIGS), default='proposed')

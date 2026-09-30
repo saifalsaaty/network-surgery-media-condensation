@@ -4,7 +4,7 @@
   1) MobileNetV3-Small بتصميم 2×2 الكامل (pure، surgery_only، full_temporal، proposed)
      — نفس مبدأ الجراحة (حذف مرحلة 1/32) ونفس الرأس الزمني: هل تعمل الجراحة على CNN خفيف أيضاً؟
   2) backbones مرجعية أثقل، كاملة، بنفس الرأس الزمني (full_temporal فقط):
-     GoogLeNet (أساس ميزات معظم طرق Table 1)، ResNet-50، MobileNetV3-Large، ViT-Base/16.
+     GoogLeNet (أساس ميزات معظم الطرق المنشورة في Table 8)، ResNet-50، MobileNetV3-Large، ViT-Base/16.
 
 كلها بنفس وصفة التدريب، ونفس الـ folds، ونفس البروتوكول.
 

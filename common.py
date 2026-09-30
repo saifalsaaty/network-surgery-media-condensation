@@ -68,7 +68,7 @@ DATASETS = ['summe', 'tvsum']
 
 # Backbones مرجعية أثقل للمقارنة العادلة (الخيار أ): كاملة بلا قطع، بنفس الرأس الزمني
 # (Conv1d-Transformer) ونفس وصفة التدريب ونفس البروتوكول — الإعداد full_temporal فقط.
-# GoogLeNet هو الـ backbone الذي بُنيت عليه ميزات معظم طرق Table 1 (VASNet، DSNet، DR-DSN...).
+# GoogLeNet هو الـ backbone الذي بُنيت عليه ميزات معظم الطرق المنشورة في Table 8 (VASNet، DSNet، DR-DSN...).
 REFERENCE_BACKBONES = ['googlenet', 'resnet50', 'mobilenetv3_large_100', 'vit_base_patch16_224']
 # عائلة CNN خفيفة بنفس تصميم 2×2 الكامل (الجراحة × الـ Transformer) لاختبار تعميم الجراحة خارج MobileViT
 CNN_ABLATION_BACKBONES = ['mobilenetv3_small_100']
